@@ -1,0 +1,2 @@
+conda config --show               显示anaconda的配置，可看瞎猜文件的通道
+conda congfig --get               显示anacanda的下载通道
