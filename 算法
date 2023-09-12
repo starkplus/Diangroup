@@ -1,2 +1,6 @@
 conda config --show               显示anaconda的配置，可看瞎猜文件的通道
-conda congfig --get               显示anacanda的下载通道
+conda congfig --get               显示anacanda的下载通道  若显示只有defaults 那么这是国外通道，有可能慢，可以采用镜像加速（）
+镜像通道使用：conda creat xxx -c 通道地址                此方法只对此次下载管用，可更改默认下载地址，但不推荐 更改后下载时会优先从最新的通道中寻找。
+如何添加下载通道：conda config --add channels 镜像地址  然后用conda config --get验证
+如何删除下载通道：conda config --remove channels 镜像地址
+   
