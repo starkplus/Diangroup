@@ -6,6 +6,7 @@ conda deactivate 退出虚拟环境
 python 进入python编辑
 exit（）或quit（）退出Python编辑
 
+conda install ipykernel 用此文件来帮助导入notebook
 python -m ipykernel install --user --n dian --display-name DIAN1进入虚拟环境中输入这行代码，完成用conda来配置notebook
 
 conda list 显示当前有哪些包
