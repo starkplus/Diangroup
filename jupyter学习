@@ -7,6 +7,11 @@ jupyter notebook可以打开以下类型的文件：
 5. .txt文件：jupyter notebook可以打开纯文本文件，可以在notebook中进行文本处理、查看和编辑。
 
 
+%matplotlib inline是一个魔术命令，它告诉Jupyter Notebook将matplotlib图表直接嵌入到Notebook中显示，
+而不是弹出一个新的窗口显示图表。这样可以方便地在Notebook中展示图表，并且与代码和文本交互。
+
+
+
 用$符号表示数学公式的开始和结尾 用两个$表示这是单行的公式
 $E=Mc^2$
 这是一元二次方程求解公式
