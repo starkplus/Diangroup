@@ -7,13 +7,50 @@ jupyter notebook可以打开以下类型的文件：
 5. .txt文件：jupyter notebook可以打开纯文本文件，可以在notebook中进行文本处理、查看和编辑。
 
 
-%matplotlib inline是一个魔术命令，它告诉Jupyter Notebook将matplotlib图表直接嵌入到Notebook中显示，
-而不是弹出一个新的窗口显示图表。这样可以方便地在Notebook中展示图表，并且与代码和文本交互。
-
-
 
 用$符号表示数学公式的开始和结尾 用两个$表示这是单行的公式
 $E=Mc^2$
 这是一元二次方程求解公式
 $$x = \frac{-b\pm \sqrt{b'2-4ac}} {2a}$$
 初中数学内容
+
+
+
+%matplotlib inline是一个魔术命令，它告诉Jupyter Notebook将matplotlib图表直接嵌入到Notebook中显示，
+而不是弹出一个新的窗口显示图表。这样可以方便地在Notebook中展示图表，并且与代码和文本交互。
+matplotlib是由两部分组成的单词，"mat"和"plotlib"。 "mat"是matrix（矩阵）的缩写，
+代表了绘图库中常用的矩阵数据结构。而"plotlib"是plot（绘图）和library（库）的组合，代表了matplotlib的绘图功能库。
+
+
+
+`from torch.utils import data` 是 Python 代码中的一行导入语句（import statement）。
+它的作用是从 `torch.utils` 模块中导入 `data` 子模块。
+在 PyTorch 中，`torch.utils.data` 模块提供了用于处理数据的工具和类。这个模块主要用于构建和处理数据集对象，
+以便于在训练神经网络时进行数据加载、批处理和数据预处理等操作。
+通过导入 `data` 子模块，你可以使用 `torch.utils.data` 中提供的一些类和函数，
+例如 `Dataset` 类用于自定义数据集，`DataLoader` 类用于加载数据集并进行批处理，
+以及其他一些数据相关的工具和功能函数。
+
+
+当你导入 `from torch.utils import data` 后，你可以使用 `data` 这个命名空间中的对象和函数。下面是一些常用的类和函数：
+1. `Dataset` 类：它是一个抽象类，用于表示数据集。你可以通过继承 `Dataset` 类来创建自定义的数据集，
+并可以在训练过程中使用它们。你需要实现 `__len__` 方法来返回数据集的长度，以及 `__getitem__` 方法来获取指定索引位置的数据项。
+2. `DataLoader` 类：它用于从数据集中加载数据并进行批处理。你可以指定批量大小、是否随机打乱数据、是否使用多个进程等参数。
+`DataLoader` 将数据集分割成小批量，并在训练时提供方便的迭代器。
+3. 其他工具和函数：`random_split` 函数用于将数据集分割为训练集和验证集；`Subset` 类用于选择数据集的子集；
+`ConcatDataset` 类用于将多个数据集连接起来；`get_worker_info` 函数用于获取多进程情况下的 worker 信息等。
+这些工具和类可以帮助你更方便地处理数据，提供数据的加载、预处理、批处理等功能，使得数据在训练神经网络时更有效地被使用。
+
+
+`from torch import nn, optim` 是一行 Python 代码中的导入语句（import statement），它用于从 PyTorch 库中导入 `nn`（神经网络模块）
+和 `optim`（优化器模块）这两个子模块。
+- `nn` 模块是 PyTorch 中用于构建神经网络的核心模块。它提供了各种不同类型的神经网络层（如全连接层、卷积层、循环神经网络等）、
+损失函数（如交叉熵损失、均方误差等）以及其他与神经网络相关的功能组件。
+- `optim` 模块是 PyTorch 中用于优化神经网络模型的模块。它提供了多种优化算法的实现，如随机梯度下降（SGD）、Adam、Adagrad 等。
+你可以使用这些优化器来更新神经网络的参数，从而最小化损失函数，优化模型的训练过程。
+通过导入 `nn` 和 `optim` 这两个子模块，你可以将它们作为命名空间使用，调用其中的类和函数来构建和优化神经网络模型。
+例如，`nn.Module` 是用于构建神经网络模型的基类，`optim.SGD` 是使用随机梯度下降算法的优化器类。
+
+
+
+
