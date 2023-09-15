@@ -18,3 +18,6 @@ conda congfig --get               显示anacanda的下载通道  若显示只有
 如何删除下载通道：conda config --remove channels 镜像地址
    
 如何取消当前命令：ctrl+C按好多次或者直接叉掉窗口 
+
+
+老师文件中有TensorFlow？
