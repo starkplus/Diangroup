@@ -1,4 +1,12 @@
-ipynb是可打开文件的后缀
+
+jupyter notebook可以打开以下类型的文件：
+1. .ipynb文件：这是jupyter notebook的默认文件格式，它包含了代码、文本和输出结果，可以在notebook中进行编辑和运行。
+2. .py文件：jupyter notebook可以打开Python代码文件，可以在notebook中编写、运行和调试Python代码。
+3. .md文件：jupyter notebook可以打开Markdown文件，可以在notebook中编写和展示Markdown文档。
+4. .csv文件：jupyter notebook可以打开逗号分隔的值（CSV）文件，可以在notebook中读取、处理和分析CSV数据。
+5. .txt文件：jupyter notebook可以打开纯文本文件，可以在notebook中进行文本处理、查看和编辑。
+
+
 用$符号表示数学公式的开始和结尾 用两个$表示这是单行的公式
 $E=Mc^2$
 这是一元二次方程求解公式
