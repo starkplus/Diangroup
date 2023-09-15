@@ -1,3 +1,6 @@
+百度网盘已下载自己找的python深度学习内容
+
+
 conda env list 显示目前的虚拟环境
 conda creat -n 名字 python=版本      创建虚拟环境
 conda creat -n 名字 python=版本 -c 镜像地址           使用镜像地址创建虚拟环境
@@ -6,10 +9,15 @@ conda deactivate 退出虚拟环境
 python 进入python编辑
 exit（）或quit（）退出Python编辑
 
+
+
+在所要导入的环境中使用以下命令：
 conda install ipykernel 用此文件来帮助导入notebook
 python -m ipykernel install --user --n dian --display-name DIAN1进入虚拟环境中输入这行代码，完成用conda来配置notebook
-
+jupyter kernelspec remove 环境名    删除环境内核
 conda list 显示当前有哪些包
+
+
 
 conda config --show               显示anaconda的配置，可看瞎猜文件的通道
 conda congfig --get               显示anacanda的下载通道  若显示只有defaults 那么这是国外通道，有可能慢，可以采用镜像加速（）
